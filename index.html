@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Yasser Parapharmacie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Yasser Parapharmacie">
+    <h1>Yasser Parapharmacie</h1>
+  </div>
+
+  <div class="cart">🛒 <span id="count">0</span></div>
+</header>
+
+<section class="hero">
+  <h2>Votre santé au naturel 🌿</h2>
+  <p>Livraison rapide partout au Maroc 🇲🇦</p>
+</section>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150">
+    <h3>Crème Hydratante</h3>
+    <p>120 DH</p>
+    <button onclick="addToCart('Crème Hydratante',120)">Ajouter</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150">
+    <h3>Shampoing Anti-chute</h3>
+    <p>95 DH</p>
+    <button onclick="addToCart('Shampoing Anti-chute',95)">Ajouter</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150">
+    <h3>Vitamine C</h3>
+    <p>150 DH</p>
+    <button onclick="addToCart('Vitamine C',150)">Ajouter</button>
+  </div>
+
+</section>
+
+<section class="panier">
+  <h2>Votre Panier</h2>
+  <ul id="cart-items"></ul>
+  <h3>Total : <span id="total">0</span> DH</h3>
+
+  <button onclick="sendWhatsApp()">Commander via WhatsApp</button>
+</section>
+
+<footer>
+  <p>📍 Casablanca | Livraison Maroc 🇲🇦</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
